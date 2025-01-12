@@ -1,0 +1,41 @@
+/* Style for the iframe container */
+.iframe-container {
+    display: flex;           /* Flexbox for side-by-side layout */
+    justify-content: space-between; /* Optional: Add space between the iframes */
+    gap: 20px;               /* Space between the two iframes */
+    margin-top: 20px;        /* Margin at the top */
+}
+
+/* Style for the iframes */
+.embedded-frame {
+    width: 48%;              /* Take up 48% of the container width */
+    height: 400px;           /* Fixed height for both iframes */
+    border: 1px solid #ddd;  /* Light border */
+    border-radius: 8px;      /* Rounded corners */
+}
+/* Card Style */
+.card {
+    background-color: #2d3b4f;   /* Dark background for the cards */
+    padding: 20px;               /* Padding inside the cards */
+    border-radius: 10px;         /* Rounded corners for cards */
+    margin-bottom: 20px;         /* Space between cards */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);  /* Slight shadow for 3D effect */
+}
+
+.card h3 {
+    color: #00adb5;      /* Highlighted color for card headers */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;  /* Space between paragraphs inside cards */
+    font-size: 16px;      /* Consistent font size */
+    color: #ddd;          /* Light color for text */
+}
+
+/* Optional - Adding hover effect for cards */
+.card:hover {
+    background-color: #3a4c64; /* Slightly lighter background when hovering */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);  /* Enhance shadow effect */
+}
