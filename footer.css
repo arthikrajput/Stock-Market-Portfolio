@@ -1,0 +1,29 @@
+/* Futuristic Footer */
+footer {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9); /* Slightly darker background */
+    box-shadow: 0px -5px 20px rgba(0, 173, 181, 0.4); /* Neon-like shadow */
+    text-align: center; /* Center align the text */
+    color: #00adb5; /* Use the same color as the logo */
+    font-size: 14px;
+    position: relative; /* for gradient overlay */
+    overflow: hidden; /* clips the gradient overflow */
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 173, 181, 0.1), transparent); /* Gradient overlay */
+    z-index: 0; /* Place behind the content */
+}
+
+footer p {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Allows text to be above overlay */
+    z-index: 1; /* Place above the gradient */
+}

@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+h2 {
+    text-align: center;
+    color: #00adb5;
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+/* Container for the iframe */
+.iframe-container {
+    display: flex;                /* Flexbox for centering content */
+    justify-content: center;      /* Center the iframe horizontally */
+    margin-top: 30px;
+}
+
+/* Style for the iframes */
+.embedded-frame {
+    width: 90%;                   /* Make iframe take up 90% of the container width */
+    max-width: 1000px;            /* Limit the max width to 1000px */
+    height: 500px;                /* Set the iframe height */
+    border: 1px solid #ddd;      /* Light border around the iframe */
+    border-radius: 8px;          /* Rounded corners for the iframe */
+}
+
+/* Extended Description Section */
+.description {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+/* Card Style */
+.card {
+    background-color: #2d3b4f;    /* Dark background for the card */
+    padding: 30px;                /* Padding inside the card */
+    border-radius: 10px;          /* Rounded corners for the card */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Slight shadow for 3D effect */
+    color: #ddd;                  /* Light text color for readability */
+    font-size: 16px;              /* Default font size */
+    width: 80%;                   /* Set the card width */
+    margin: 0 auto;               /* Center the card horizontally */
+    margin-bottom: 30px;          /* Bottom margin for spacing */
+}
+
+/* Card Header Style */
+.card h3 {
+    color: #00adb5;               /* Highlighted color for the card header */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Card Paragraph Style */
+.card p {
+    margin-bottom: 15px;          /* Space between paragraphs inside the card */
+    color: #ddd;                  /* Light color for the text */
+    font-size: 16px;              /* Font size for the paragraphs */
+}
+
+/* Optional - Adding hover effect for the card */
+.card:hover {
+    background-color: #3a4c64;    /* Slightly lighter background when hovering */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);  /* Enhanced shadow effect */
+    transition: all 0.3s ease-in-out;  /* Smooth transition effect */
+}
+
+/* Responsive Design: Adjust iframe size and layout on smaller screens */
+@media (max-width: 768px) {
+    .iframe-container {
+        flex-direction: column;      /* Stack iframes vertically on smaller screens */
+        align-items: center;         /* Center iframes horizontally when stacked */
+    }
+
+    .embedded-frame {
+        width: 90%;                  /* Adjust iframe width for smaller screens */
+        height: 400px;               /* Reduced height on smaller screens */
+    }
+
+    .card {
+        width: 90%;                  /* Increase card width for smaller screens */
+    }
+}
